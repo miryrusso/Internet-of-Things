@@ -7,6 +7,14 @@ Benvenuti nella repository "Internet-of-Things" di miryrusso! In questa reposito
 In questa repository troverete:
 
 - **Codici di Esercitazioni Singole:** I sorgenti dei programmi e progetti relativi alle esercitazioni svolte durante il corso. Questi codici sono stati scritti e testati per essere utilizzati con microcontrollori ESP32.
+- **I codici implementati includono vari argomenti:**
+    - Bluetooth
+    - BLE
+    - Reti Mesh
+    - Wifi
+    - Zigbee
+    - Lora
+    - HTTP & WebServer
 
 ## ESP32 
 

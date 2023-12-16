@@ -15,6 +15,7 @@ In questa repository troverete:
     - Zigbee
     - Lora
     - HTTP & WebServer
+    - RFID *(using RFID RC522)*
 
 ## ESP32 
 

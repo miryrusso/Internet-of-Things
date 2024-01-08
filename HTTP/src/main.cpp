@@ -4,8 +4,8 @@
 #include <ESPAsyncWebServer.h>
 
 AsyncWebServer server(80);
-const char *ssid = "iPhone di Miriana";
-const char *password = "ciaociao";
+const char *ssid = "NomeRete";
+const char *password = "Password";
 
 void notFound(AsyncWebServerRequest *request)
 {

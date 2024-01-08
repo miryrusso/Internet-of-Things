@@ -1,11 +1,25 @@
+/* Il dispositivo si connette a una rete Wi-Fi specificata e avvia un server web sulla porta 80.
+    Il server web gestisce tre endpoint:
+    /: Risponde a richieste GET sull'indirizzo radice restituendo "Hello, world" come risposta in formato testo.
+    /led: Gestisce richieste GET sull'endpoint "/led". Se la richiesta include un parametro "status" con valori "on", "off" o "toggle", 
+    cambia lo stato del LED incorporato sulla scheda Arduino in base al valore ricevuto. Se non viene fornito alcun parametro "status" 
+    nella richiesta, restituirà "che faccio?" in formato testo.
+    notFound: Gestisce le richieste a endpoint non esistenti, restituendo un messaggio di "Not found" con codice di stato 404.
+    
+    Il LED incorporato sulla scheda Arduino viene controllato attraverso richieste HTTP GET all'endpoint "/led" con i parametri 
+    "status=on", "status=off" o "status=toggle". Se il parametro "status" non viene fornito o se è diverso da questi valori, 
+    il server restituirà un messaggio di errore.
+    In sostanza, questo codice permette di controllare il LED della scheda Arduino via web attraverso richieste GET inviando 
+    comandi specifici per accendere, spegnere o invertire lo stato del LED.
+*/
 #include <Arduino.h>
 #include <WiFi.h>
 #include <AsyncTCP.h>
 #include <ESPAsyncWebServer.h>
 
 AsyncWebServer server(80);
-const char *ssid = "iPhone di Miriana";
-const char *password = "ciaociao";
+const char *ssid = "NomeRete";
+const char *password = "Password";
 
 void notFound(AsyncWebServerRequest *request)
 {

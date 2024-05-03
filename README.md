@@ -2,6 +2,8 @@
 
 Benvenuti nella repository "Internet-of-Things" di miryrusso! In questa repository, troverete codici, esercitazioni e risoluzioni relative alle lezioni di IoT svolte all'Università di Catania.
 
+Alla fine del corso, ci è stato assegnato un progetto di gruppo, sviluppato insieme ad Alessio Tudisco, intitolato _IoT_CapybaraSafe_ consultabile al seguente <a href="https://github.com/LightDestory/IoT_CapybaraSafe">link</a>.
+
 ## Descrizione
 
 In questa repository troverete:
